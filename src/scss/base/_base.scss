@@ -1,0 +1,9 @@
+body {
+    background: var(--gray);
+}
+
+.container {
+    margin: 0 auto;
+    border: 1px solid red;
+    max-width: var(--main-width);
+}

@@ -1,10 +1,9 @@
 const {src, dest, watch, series} = require('gulp');
 const compileSass = require('gulp-sass')(require('node-sass'));
 const prefix = require('gulp-autoprefixer');
-const concat = require('gulp-concat');
 
 function compileeCSS() {
-    return src('src/scss/main.scss')
+    return src('src/scss/style.scss')
         .pipe(compileSass())
         .pipe(prefix())
         .pipe(dest('public/css'))
