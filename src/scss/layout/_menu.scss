@@ -1,4 +1,21 @@
 .menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    &__button {
+        border: 2px solid var(--purple);
+        background: var(--gray);
+        color: white;
+
+        &:hover {
+            background: var(--gray);
+            border: 2px solid var(--purple-light);
+        }
+    }
+
+
+    ul {
+        margin: 0;
+    }
 }

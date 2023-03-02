@@ -1,24 +1,64 @@
 :root {
   --gray: #323645;
+  --gray-light: #3e414f;
   --black: #1F2326;
-  --aqua-blue: #54EEE7;
-  --main-width: 1530px; }
+  --purple: #6867AB;
+  --purple-light: #8181ae;
+  --main-width: 1200px; }
 
 .menu {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+  .menu__button {
+    border: 2px solid var(--purple);
+    background: var(--gray);
+    color: white; }
+    .menu__button:hover {
+      background: var(--gray);
+      border: 2px solid var(--purple-light); }
+  .menu ul {
+    margin: 0; }
 
 .header {
-  padding: 25px 0; }
-  .header ul {
-    margin: 0; }
+  padding: 22px 0;
+  margin: 0; }
+  .header a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white; }
+
+.hero {
+  display: flex;
+  min-height: 90vh;
+  margin-top: 100px; }
+  .hero__button {
+    border: 2px solid var(--purple);
+    background: var(--purple);
+    color: white; }
+    .hero__button:hover {
+      border: 2px solid var(--purple-light);
+      background: var(--purple-light); }
+  .hero__title {
+    font-size: 70px; }
+  .hero__text {
+    color: white;
+    font-size: 20px; }
+  .hero__leftside {
+    width: 40%; }
+  .hero__rightside {
+    margin-left: 20px; }
+
+.button {
+  padding: 12px 47px;
+  border-radius: 6px; }
 
 body {
   background: var(--gray); }
 
 .container {
   margin: 0 auto;
-  border: 1px solid red;
+  padding: 0 20px;
   max-width: var(--main-width); }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
