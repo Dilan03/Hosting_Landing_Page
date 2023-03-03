@@ -6,6 +6,14 @@
   --purple-light: #8181ae;
   --main-width: 1200px; }
 
+body {
+  background: var(--gray); }
+
+.container {
+  margin: 0 auto;
+  padding: 0 35px;
+  max-width: var(--main-width); }
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -30,8 +38,9 @@
 
 .hero {
   display: flex;
-  min-height: 90vh;
-  margin-top: 100px; }
+  position: relative;
+  min-height: 80vh;
+  margin-top: 120px; }
   .hero__button {
     border: 2px solid var(--purple);
     background: var(--purple);
@@ -43,23 +52,66 @@
     font-size: 70px; }
   .hero__text {
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 58px; }
   .hero__leftside {
-    width: 40%; }
+    width: 50%; }
   .hero__rightside {
+    position: relative;
+    width: 50%;
+    height: 450px;
     margin-left: 20px; }
+  .hero__image {
+    position: absolute; }
+  @media screen and (max-width: 1090px) {
+    .hero__image {
+      width: 90%; }
+    .hero__rightside {
+      padding-top: 60px; } }
+  .hero__social {
+    flex-direction: column;
+    right: 0;
+    bottom: 0; }
 
 .button {
   padding: 12px 47px;
   border-radius: 6px; }
 
-body {
-  background: var(--gray); }
+.social {
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px; }
+  .social i {
+    cursor: pointer;
+    margin-bottom: 25px; }
 
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: var(--main-width); }
+.test {
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background-color: bisque; }
+  .test__social {
+    left: 0;
+    top: 0;
+    bottom: 1; }
+
+.floating {
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px; }
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px); }
+  50% {
+    transform: translate(0, 15px); }
+  100% {
+    transform: translate(0, 0px); } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

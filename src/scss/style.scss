@@ -1,5 +1,6 @@
 
 @import 'abstracts/variables';
+@import 'base/_base';
 
 @import 'layout/_menu';
 @import 'layout/_header';
@@ -7,6 +8,7 @@
 
 
 @import 'mixins/_button';
+@import 'mixins/_social';
+@import 'animations/floating';
 
-@import 'base/_base';
 @import 'base/_normalize';

@@ -1,0 +1,24 @@
+.social {
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    i {
+        cursor: pointer;
+        margin-bottom: 25px;
+    }
+}
+
+.test {
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: bisque;
+
+    &__social {
+        left:0;
+        top: 0;
+        bottom: 1;
+    }
+}
