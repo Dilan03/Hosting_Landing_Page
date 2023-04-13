@@ -2,6 +2,12 @@ body {
     background: var(--gray);
 }
 
+.body__image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 35px;

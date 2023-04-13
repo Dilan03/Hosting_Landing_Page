@@ -1,10 +1,13 @@
 
+@import 'abstracts/fonts';
 @import 'abstracts/variables';
 @import 'base/_base';
 
 @import 'layout/_menu';
 @import 'layout/_header';
 @import 'layout/hero';
+@import 'layout/features';
+@import 'layout/plans';
 
 
 @import 'mixins/_button';

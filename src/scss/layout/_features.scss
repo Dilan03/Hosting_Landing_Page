@@ -1,0 +1,24 @@
+.features {
+    margin-top: 180px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 270px);
+    grid-gap: 123px 82px
+}
+
+.features__item {
+    background: var(--gray-dark);
+    border-radius: 10px;
+    box-shadow: -16px 16px var(--shadow);
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.item3 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}

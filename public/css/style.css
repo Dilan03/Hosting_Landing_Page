@@ -1,13 +1,61 @@
+@font-face {
+  font-family: NanumGothic-Bold;
+  src: url(../assets/fonts/NanumGothic-Bold.ttf); }
+
+@font-face {
+  font-family: NanumGothic-Regular;
+  src: url(../assets/fonts/NanumGothic-Regular.ttf); }
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../assets/fonts/Montserrat-Bold.ttf); }
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(../assets/fonts/Montserrat-Light.ttf); }
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(../assets/fonts/Montserrat-Medium.ttf); }
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../assets/fonts/Montserrat-Regular.ttf); }
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(../assets/fonts/Montserrat-SemiBold.ttf); }
+
+.f-Mont-22 {
+  font-family: Montserrat-Regular;
+  font-size: 22px; }
+
+.f-Mont-20 {
+  font-family: Montserrat-Regular;
+  font-size: 20px; }
+
 :root {
   --gray: #323645;
-  --gray-light: #3e414f;
-  --black: #1F2326;
-  --purple: #6867AB;
-  --purple-light: #8181ae;
-  --main-width: 1200px; }
+  --gray-light: #464B5F;
+  --gray-light2: #8899C9;
+  --gray-dark: #2A2D38;
+  --blue-aqua: #6BB5FB;
+  --blue-dark: #384E85;
+  --purple: #798FFE;
+  --purple-light: #899dfc;
+  --white-50: rgba(255, 255, 255, 0.501);
+  --shadow: rgba(0, 0, 0, 0.25);
+  --green: #609E5F;
+  --red: #9E5F5F;
+  --main-width: 1308px; }
 
 body {
   background: var(--gray); }
+
+.body__image {
+  position: absolute;
+  width: 100%;
+  z-index: -1; }
 
 .container {
   margin: 0 auto;
@@ -19,28 +67,36 @@ body {
   justify-content: space-between;
   align-items: center; }
   .menu__button {
-    border: 2px solid var(--purple);
-    background: var(--gray);
-    color: white; }
+    border: 4px solid var(--gray-dark);
+    background: var(--gray-light);
+    color: var(--gray-dark);
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    padding: 8px 36px;
+    border-radius: 10px;
+    margin-left: 30px; }
     .menu__button:hover {
-      background: var(--gray);
-      border: 2px solid var(--purple-light); }
+      color: white;
+      background: var(--gray-dark); }
+  .menu span {
+    display: flex;
+    align-items: center; }
   .menu ul {
     margin: 0; }
 
 .header {
-  padding: 22px 0;
+  padding: 12px 0;
   margin: 0; }
   .header a {
     padding: 0 20px;
     text-decoration: none;
-    color: white; }
+    color: var(--white-50); }
 
 .hero {
   display: flex;
   position: relative;
   min-height: 80vh;
-  margin-top: 120px; }
+  margin-top: 180px; }
   .hero__button {
     border: 2px solid var(--purple);
     background: var(--purple);
@@ -49,14 +105,17 @@ body {
       border: 2px solid var(--purple-light);
       background: var(--purple-light); }
   .hero__title {
-    font-size: 70px; }
-  .hero__text {
+    margin: 0;
     color: white;
-    font-size: 20px;
-    margin-bottom: 58px; }
+    font-size: 100px;
+    font-family: NanumGothic-Bold; }
+  .hero__text {
+    color: var(--white-50);
+    margin-bottom: 32px; }
   .hero__leftside {
-    width: 50%; }
+    width: 65%; }
   .hero__rightside {
+    margin-top: 60px;
     position: relative;
     width: 50%;
     height: 450px;
@@ -67,11 +126,32 @@ body {
     .hero__image {
       width: 90%; }
     .hero__rightside {
-      padding-top: 60px; } }
+      padding-top: 60px;
+      height: 350px; } }
   .hero__social {
     flex-direction: column;
     right: 0;
     bottom: 0; }
+
+.features {
+  margin-top: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 270px);
+  grid-gap: 123px 82px; }
+
+.features__item {
+  background: var(--gray-dark);
+  border-radius: 10px;
+  box-shadow: -16px 16px var(--shadow); }
+
+.item2 {
+  grid-column-start: 2;
+  grid-row-start: 2; }
+
+.item3 {
+  grid-column-start: 3;
+  grid-row-start: 3; }
 
 .button {
   padding: 12px 47px;
