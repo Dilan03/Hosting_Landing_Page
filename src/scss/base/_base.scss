@@ -13,3 +13,29 @@ body {
     padding: 0 35px;
     max-width: var(--main-width);
 }
+
+h3 {
+    margin: 0;
+    color: white;
+    font-family: Montserrat-SemiBold;
+    font-size: 42px;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: NanumGothic-Regular;
+    font-size: 60px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 100px;
+    font-family: NanumGothic-Bold;
+}
+
+.hidden {
+    display: none;
+}

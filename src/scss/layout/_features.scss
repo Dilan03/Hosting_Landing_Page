@@ -1,16 +1,18 @@
 .features {
-    margin-top: 180px;
+    margin-top: 200px;
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 270px);
-    grid-gap: 123px 82px
-}
+    grid-gap: 45px 80px;
 
-.features__item {
-    background: var(--gray-dark);
-    border-radius: 10px;
-    box-shadow: -16px 16px var(--shadow);
+    &__item {
+
+        background: var(--gray-dark);
+        border-radius: 10px;
+        box-shadow: -16px 16px var(--shadow);
+        padding: 32px;
+    }
 }
 
 .item2 {
