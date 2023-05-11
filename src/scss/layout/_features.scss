@@ -7,11 +7,17 @@
     grid-gap: 45px 80px;
 
     &__item {
-
+        position: relative;
         background: var(--gray-dark);
         border-radius: 10px;
         box-shadow: -16px 16px var(--shadow);
         padding: 32px;
+
+        p {
+            font-family: Montserrat-Regular;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.655);
+        }
     }
 }
 
@@ -23,4 +29,19 @@
 .item3 {
     grid-column-start: 3;
     grid-row-start: 3;
+}
+
+.figura1 {
+    position: absolute;
+    top: -80px;
+}
+
+.figura2 {
+    position: absolute;
+    top: -38px;
+}
+
+.figura3 {
+    position: absolute;
+    top: -66px;
 }

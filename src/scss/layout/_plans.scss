@@ -8,8 +8,8 @@
     width: calc(100% - 48px);
     height: 500px;
     border-radius: 10px;
-    margin:200px 0;
-    
+    margin: 200px 0;
+
     background-color: var(--gray-dark);
 
     &__plans {
@@ -33,6 +33,12 @@
         display: flex;
         align-items: center;
         height: calc(20% - 3px);
+    }
+
+    &__feature p {
+        font-family: Montserrat-Regular;
+        font-size: 18px;
+        color: white;
     }
 
     p {
@@ -64,22 +70,22 @@
         border-radius: 10px;
     }
 
-    &__plan h4 span{
+    &__plan h4 span {
         font-size: 20px;
     }
-    
+
     &__checks {
         position: absolute;
         height: 100%;
     }
-    
+
     &__icon {
         display: flex;
         justify-content: center;
         height: 20%;
     }
-    
-    &__icon img{
+
+    &__icon img {
         width: 45px;
     }
 
@@ -93,7 +99,7 @@
 
 }
 
-.activeplan{
+.activeplan {
     background-color: var(--gray-dark);
     box-shadow: -16px 16px var(--shadow);
 }

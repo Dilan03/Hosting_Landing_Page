@@ -62,11 +62,17 @@ body {
   padding: 0 35px;
   max-width: var(--main-width); }
 
+h4 {
+  margin: 0;
+  color: white;
+  font-family: Montserrat-Bold;
+  font-size: 24px; }
+
 h3 {
   margin: 0;
   color: white;
   font-family: Montserrat-SemiBold;
-  font-size: 42px; }
+  font-size: 35px; }
 
 h2 {
   margin: 0;
@@ -159,10 +165,15 @@ h1 {
   grid-template-rows: repeat(3, 270px);
   grid-gap: 45px 80px; }
   .features__item {
+    position: relative;
     background: var(--gray-dark);
     border-radius: 10px;
     box-shadow: -16px 16px var(--shadow);
     padding: 32px; }
+    .features__item p {
+      font-family: Montserrat-Regular;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.655); }
 
 .item2 {
   grid-column-start: 2;
@@ -171,6 +182,18 @@ h1 {
 .item3 {
   grid-column-start: 3;
   grid-row-start: 3; }
+
+.figura1 {
+  position: absolute;
+  top: -80px; }
+
+.figura2 {
+  position: absolute;
+  top: -38px; }
+
+.figura3 {
+  position: absolute;
+  top: -66px; }
 
 .plans {
   margin-top: 200px; }
@@ -198,6 +221,10 @@ h1 {
     display: flex;
     align-items: center;
     height: calc(20% - 3px); }
+  .plansTab__feature p {
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: white; }
   .plansTab p {
     margin: 0; }
   .plansTab__plan {
@@ -245,6 +272,95 @@ h1 {
 
 .activecheck {
   filter: invert(57%) sepia(94%) saturate(250%) hue-rotate(169deg) brightness(96%) contrast(105%); }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  background: var(--gray-dark);
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: -16px 16px var(--shadow);
+  padding: 40px; }
+  .form input[type=text],
+  .form input[type=email],
+  .form input[type=password] {
+    margin: 16px 0;
+    width: 500px;
+    height: 55px;
+    border-radius: 10px;
+    background: var(--gray-light);
+    border: none; }
+  .form input[type=submit] {
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin: 16px 0;
+    background: var(--purple);
+    border: none; }
+  .form h4 {
+    margin-bottom: 70px; }
+  .form ::-moz-placeholder {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.551);
+    padding-left: 20px; }
+  .form ::placeholder {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.551);
+    padding-left: 20px; }
+  .form a {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--blue-aqua); }
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px; }
+  .faq__text {
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    text-align: center;
+    margin: 50px 0;
+    color: white; }
+  .faq__question {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 25px auto;
+    border-radius: 10px;
+    padding: 8px 0;
+    background: var(--gray-light);
+    box-shadow: -16px 16px var(--shadow); }
+  .faq__question span {
+    display: flex; }
+  .faq__question p,
+  .faq img {
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: white;
+    margin-left: 25px; }
+  .faq__description {
+    font-family: Montserrat-Light !important;
+    font-size: 18px !important;
+    margin-left: 80px !important; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid var(--gray-light);
+  margin-top: 350px; }
+  footer p {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.551); }
 
 .button {
   padding: 20px 20px;

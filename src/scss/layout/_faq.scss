@@ -1,0 +1,43 @@
+.faq {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 150px;
+
+   &__text {
+      font-family: Montserrat-Regular;
+      font-size: 18px;
+      text-align: center;
+      margin: 50px 0;
+      color: white;
+   }
+
+   &__question {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      margin: 25px auto;
+      border-radius: 10px;
+      padding: 8px 0;
+      background: var(--gray-light);
+      box-shadow: -16px 16px var(--shadow);
+   }
+
+   &__question span {
+      display: flex;
+   }
+
+
+   &__question p,
+   img {
+      font-family: Montserrat-Regular;
+      font-size: 20px;
+      color: white;
+      margin-left: 25px;
+   }
+
+   &__description {
+      font-family: Montserrat-Light !important;
+      font-size: 18px !important;
+      margin-left: 80px !important;
+   }
+}
